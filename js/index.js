@@ -2,9 +2,13 @@ const support = document.querySelector(".support i");
 const phu = document.querySelector(".phu");
 const imgset = document.querySelectorAll(".slide img");
 const imgSlide = document.querySelector(".slide")
-const prev = document.querySelector(".arrow-left i");
-const next = document.querySelector(".arrow-right i");
+const prevSlide = document.querySelector(".arrow-left i");
+const nextSlide = document.querySelector(".arrow-right i");
 const dotItem = document.querySelectorAll(".dot");
+const prevHotProduct = document.querySelector(".leftproduct i");
+const nextHotProduct = document.querySelector(".rightproduct i");
+const listproduct = document.querySelector(".list-product")
+var width = listproduct.getBoundingClientRect().width;
 ////click->show
 function show(){
     document.querySelector(".trogiup").classList.toggle("hide");
@@ -41,13 +45,13 @@ setInterval(function(){
     if(index>=imgset.length) {index=0;}
     slide(index); 
 }, 8000);
-next.addEventListener("click",()=>
+nextSlide.addEventListener("click",()=>
 {
     index++;
     if(index>=imgset.length) {index=imgset.length-1;}
     slide(index);
 })
-prev.addEventListener("click",()=>
+prevSlide.addEventListener("click",()=>
 {
     index--;
     if(index<=0) {index=0;}
@@ -64,3 +68,33 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+///Hot product
+sum = 0;
+x=600;
+nextHotProduct.addEventListener("click",()=>{
+    if(sum==width-1500)
+    {
+        listproduct.style.left = 0;
+        sum=0;
+        return;
+    }
+    sum+=x;
+    console.log(sum);
+    if(sum>width-1500)
+    {
+        sum=width-1500;
+        listproduct.style.left = "-"+(sum-300)+"px";
+        return;
+    }
+    listproduct.style.left = "-"+sum+"px";
+})
+prevHotProduct.addEventListener("click",()=>{
+    sum-=x;
+    if(sum<0)
+    {
+        listproduct.style.left = 0;
+        sum=0;
+        return;
+    }
+    listproduct.style.left = "-"+sum+"px";
+})

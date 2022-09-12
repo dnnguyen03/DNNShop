@@ -113,7 +113,7 @@ header{
     width: 100%;
     height: 100vh;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
 }
 .trogiup p{
     margin: 20px 0;
@@ -218,11 +218,11 @@ header{
     padding: 5px;
 }
 .arrow-left i:hover{
-    color: white;
+    background-color: black;
     border: 1px solid white;
 }
 .arrow-right i:hover{
-    color: white;
+    background-color: black;
     border: 1px solid white;
 }
 .dot-img{
@@ -287,6 +287,83 @@ h4{
 .sub-menu a{
     display: table;
     margin-bottom: 12px;
+}
+.hot-product{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 1px;
+    overflow: hidden;
+}
+.title-hot-product{
+    font-size: 25px;
+    margin: 70px 0 0 70px;
+}
+.action-hot-product{
+    position: absolute;
+    margin-top: -48px;
+    left: 1450px;
+    display: flex;
+}
+.action-hot-product a{
+    color: black;
+    margin-right: 30px;
+    font-size: 26px;
+    margin-top: 7px;
+}
+.action-hot-product a:hover{
+    text-decoration: underline;
+}
+.action-hot-product i{
+    margin: 0 5px;
+    font-size: 28px;
+    padding: 8px;
+    cursor: pointer;
+}
+.action-hot-product i:hover{
+    background-color: black;
+    color: white;
+}
+.list-product{
+    margin-top: 25px;
+    height: 500px;
+    position: relative;
+    display: inline-flex;
+    transition: 0.6s;
+}
+.list-product >div{
+    width: 450px;
+    transition: 0.2s;
+    margin-right: 35px;
+}
+.list-product >div:first-child{
+    margin-left: 68px;
+}
+.list-product div img{
+    width: 100%;
+}
+.price{
+    position: absolute;
+    background-color: white;
+    margin-top: -38px;
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 3px;
+    border: 1px solid black;
+    transition: 0.2s;
+}
+.name-product{
+    font-size: 25px;
+    text-align: center;
+    padding: 8.5px 0;
+}
+.list-product > div:hover{
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 1px;
+}
+.list-product > div:hover .price{
+    margin-top: -50px;
 }
 @keyframes hieuungmenu{
     0%{
