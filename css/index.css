@@ -15,6 +15,7 @@ header {
   border-bottom: 1px solid #e5e5e5;
   position: fixed;
   z-index: 5;
+  transition: 0.2s;
 }
 .fix-header {
   height: 100px;
@@ -217,6 +218,11 @@ h4 {
   text-align: center;
   font-size: 25px;
 }
+.btn-new-product {
+  position: relative;
+  z-index: 1;
+  display: none;
+}
 .slide-product {
   position: relative;
   width: 100%;
@@ -319,6 +325,9 @@ h4 {
 .action-hot-product i:hover {
   background-color: black;
   color: white;
+}
+.btn-hot-product {
+  display: none;
 }
 .slick-track {
   margin: 10px 0;
@@ -546,11 +555,35 @@ h4 {
     text-align: left;
     margin-left: 10px;
   }
+  .title-new-product p {
+    display: none;
+  }
+  .btn-new-product {
+    display: block;
+    float: right;
+    margin-right: 45px;
+    margin-top: -28px;
+  }
+  .btn-hot-product button,
+  .btn-new-product button {
+    padding: 4px 8px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: white;
+  }
+  .btn-new-product button:hover {
+    background-color: black;
+    color: white;
+  }
+  .btn-hot-product button:hover {
+    background-color: black;
+    color: white;
+  }
   .slide-product {
     margin-top: 5px;
   }
   .new-product {
-    margin-top: -10px;
+    margin-top: -20px;
   }
   .logo {
     transform: translate(0);
@@ -571,8 +604,8 @@ h4 {
     display: none;
   }
   .btn-video {
-    font-size: 10px;
-    padding: 5px 10px;
+    font-size: 12px;
+    padding: 8px 10px;
   }
   .slick-dots {
     bottom: 0;
@@ -605,6 +638,11 @@ h4 {
   .name-product {
     font-size: 15px;
   }
+  .btn-hot-product {
+    display: block;
+    margin-top: 15px;
+    margin-left: 40%;
+  }
   .footer {
     height: 100%;
     font-size: 15px;
@@ -625,9 +663,15 @@ h4 {
   .diachi {
     width: 100%;
     margin-top: -20px;
+    font-size: 12px;
   }
   .contact {
     margin-top: -20px;
+  }
+  .facebook,
+  .youtube,
+  .instagram {
+    font-size: 20px;
   }
   .contact,
   .diachi {
@@ -641,14 +685,28 @@ h4 {
   }
   .footer .dkthongbao {
     margin: 0 auto;
+    height: 60%;
     margin-top: 10px;
     border-bottom-right-radius: unset;
     border-top-left-radius: unset;
+    font-size: 15px;
+  }
+  .dkthongbao input {
+    font-size: 12px;
+  }
+  .dkthongbao button {
+    height: 40px;
+    width: 80px;
+    border-top-left-radius: unset;
+    border-bottom-right-radius: unset;
   }
   .footer .logo2 img {
     display: none;
   }
   .footer .information .logo2 {
+    display: none;
+  }
+  .action-hot-product {
     display: none;
   }
 }
