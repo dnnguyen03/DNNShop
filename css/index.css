@@ -130,7 +130,7 @@ header {
 .sub-menu {
   position: absolute;
   width: 99.19vmax;
-  margin-top: 41px;
+  margin-top: 42px;
   background-color: white;
   padding: 35px 0 25px 0;
   font-size: 16px;
@@ -398,7 +398,7 @@ h4 {
   margin-left: 70px;
   padding-top: 50px;
   height: 100%;
-  width: 350px;
+  width: 400px;
   float: left;
 }
 .footer .information .logo2 {
@@ -443,7 +443,7 @@ h4 {
 .gioithieu {
   float: left;
   height: 100%;
-  width: 280px;
+  width: 300px;
 }
 .gioithieu > b > p,
 .dichvu > b > p,
@@ -459,7 +459,7 @@ h4 {
 .dichvu {
   float: left;
   height: 100%;
-  width: 350px;
+  width: 400px;
 }
 .lienhe {
   float: left;
@@ -477,14 +477,14 @@ h4 {
 }
 .rightfooter {
   float: right;
-  margin-right: 10px;
+  margin-right: 50px;
   height: 100%;
   width: 500px;
 }
 .dkthongbao {
   margin: 0 auto;
-  height: 200px;
-  width: 90%;
+  height: 220px;
+  width: 94%;
   margin-top: 50px;
   font-size: 25px;
   padding: 15px 0;
@@ -550,7 +550,7 @@ h4 {
     margin-top: 5px;
   }
   .new-product {
-    margin-top: 0;
+    margin-top: -10px;
   }
   .logo {
     transform: translate(0);
@@ -606,7 +606,50 @@ h4 {
     font-size: 15px;
   }
   .footer {
+    height: 100%;
     font-size: 15px;
+    margin-left: 0;
+    overflow: hidden;
+  }
+  .gioithieu,
+  .dichvu,
+  .lienhe {
+    display: none;
+  }
+  .footer .information {
+    margin-top: -40px;
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+  .diachi {
+    width: 100%;
+    margin-top: -20px;
+  }
+  .contact {
+    margin-top: -20px;
+  }
+  .contact,
+  .diachi {
+    margin-left: 20px;
+  }
+  .rightfooter {
+    margin: 0 auto;
+    margin-top: -45px;
+    height: 270px;
+    width: 100%;
+  }
+  .footer .dkthongbao {
+    margin: 0 auto;
+    margin-top: 10px;
+    border-bottom-right-radius: unset;
+    border-top-left-radius: unset;
+  }
+  .footer .logo2 img {
+    display: none;
+  }
+  .footer .information .logo2 {
+    display: none;
   }
 }
 
