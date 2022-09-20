@@ -1,261 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    
-    <link rel="stylesheet" href="css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
     <title>DNN Shop</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="phu hide"></div>
     <!-------------------------- header --------------------->
     <header class="header">
-        <div class="main-menu">
-            <li><a href=""><b>NAM</b></a>
-                <div class="sub-menu" style="margin-left:-75px;">
-                    <div class="chitiet">
-                        <div>
-                            <h4><a href="">GIÀY</a></h4> 
-                            <a href="">Tất cả giày</a>
-                            <a href="">Chạy</a>
-                            <a href="">Giày Nike</a>
-                            <a href="">Giày Adidas</a>
-                            <a href="">Giày đá bóng</a>
-                        </div>
-                        <div>
-                            <h4><a href="">Áo</a></h4> 
-                            <a href="">Tất cả áo</a>
-                            <a href="">Áo polo</a>
-                            <a href="">Áo sơ mi</a>
-                            <a href="">Áo ba lổ</a>
-                            <a href="">Áo hoodie</a>
-                            <a href="">Áo bóng đá</a>
-                        </div>
-                        <div>
-                            <h4><a href="">Quần</a></h4> 
-                            <a href="">Tất cả quần</a>
-                            <a href="">Quần jean</a>
-                            <a href="">Quần tây</a>
-                            <a href="">Quần dài</a>
-                            <a href="">Quần đùi</a>
-                            <a href="">Quần bóng đá</a>
-                        </div>
-                        <div>
-                            <h4><a href="">Phụ kiện</a></h4> 
-                            <a href="">Tất cả phụ kiện</a>
-                            <a href="">Vòng tay</a>
-                            <a href="">Vòng cổ</a>
-                            <a href="">Nhẫn</a>
-                            <a href="">Tất</a>
-                            <a href="">Găng tay</a>
-                            <a href="">Balo</a>
-                            <a href="">Khẩu trang</a>
-                            <a href="">Đồng Hồ</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li><a href=""><b>NỮ</b></a>
-                <div class="sub-menu" style="margin-left:-140px ;">
-                    <div class="chitiet">
-                        <div>
-                            <h4><a href="">GIÀY</a></h4>
-                            <a href="">Tất cả giày</a>
-                            <a href="">Chạy</a>
-                            <a href="">Giày Nike</a>
-                            <a href="">Giày Adidas</a>
-                        </div>
-                        <div>
-                            <h4><a href="">Áo</a></h4>
-                            <a href="">Tất cả áo</a>
-                            <a href="">Áo sơ mi</a>
-                            <a href="">Áo hoodie</a>
-                        </div>
-                        <div>
-                            <h4><a href="">Quần</a></h4> 
-                            <a href="">Tất cả quần</a>
-                            <a href="">Quần jean</a>
-                            <a href="">Quần tây</a>
-                            <a href="">Quần dài</a>
-                        </div>
-                        <div>
-                            <h4><a href="">Phụ kiện</a></h4>
-                            <a href="">Tất cả phụ kiện</a>
-                            <a href="">Vòng tay</a>
-                            <a href="">Vòng cổ</a>
-                            <a href="">Nhẫn</a>
-                            <a href="">Tất</a>
-                            <a href="">Găng tay</a>
-                            <a href="">Balo</a>
-                            <a href="">Khẩu trang</a>
-                            <a href="">Đồng Hồ</a>
-                        </div>
-                        <div>
-                            <h4><a href="">Mỹ phẩm</a></h4>
-                            <a href="">Tất cả mỹ phẩm</a>
-                            <a href="">Son</a>
-                            <a href="">Kem chống nắng</a>
-                            <a href="">Xịt dưỡng ẩm</a>
-                            <a href="">Phấn trang điểm</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li><a href=""><b>GIẢM GIÁ</b></a>
-                <div class="sub-menu" style="margin-left:-185px;">
-                    <div class="chitiet">
-                        <div>
-                            <h4><a href="">SALE 80%</a></h4>
-                            <a href="">Giày cầu thủ Ronaldo</a>
-                        </div>
-                        <div>
-                            <h4><a href="">SALE 60%</a></h4> 
-                            <a href="">Áo thun Mỹ</a>
-                        </div>
-                        <div>
-                            <h4><a href="">SALE 20%</a></h4> 
-                            <a href="">Áo đấu Manchester United</a>
-                            <a href="">Áo đấu cầu thủ Messi</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li><a href=""><b>BỘ SỰU TẬP</b></a></li>
-            <li><a href=""><b>VỀ CHÚNG TÔI</b></a></li>
-        </div>
-        <div class="logo">
-            <img src="img/logo1.png" alt="">
-        </div>
-        <div class="right-header">
-            <div class="search-form">
-                <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <input type="text" placeholder="Tìm kiếm sản phẩm">
+      <div class="main-menu">
+        <li>
+          <a href=""><b>NAM</b></a>
+          <div class="sub-menu" style="margin-left: -75px">
+            <div class="chitiet">
+              <div>
+                <h4><a href="">GIÀY</a></h4>
+                <a href="">Tất cả giày</a>
+                <a href="">Chạy</a>
+                <a href="">Giày Nike</a>
+                <a href="">Giày Adidas</a>
+                <a href="">Giày đá bóng</a>
+              </div>
+              <div>
+                <h4><a href="">Áo</a></h4>
+                <a href="">Tất cả áo</a>
+                <a href="">Áo polo</a>
+                <a href="">Áo sơ mi</a>
+                <a href="">Áo ba lổ</a>
+                <a href="">Áo hoodie</a>
+                <a href="">Áo bóng đá</a>
+              </div>
+              <div>
+                <h4><a href="">Quần</a></h4>
+                <a href="">Tất cả quần</a>
+                <a href="">Quần jean</a>
+                <a href="">Quần tây</a>
+                <a href="">Quần dài</a>
+                <a href="">Quần đùi</a>
+                <a href="">Quần bóng đá</a>
+              </div>
+              <div>
+                <h4><a href="">Phụ kiện</a></h4>
+                <a href="">Tất cả phụ kiện</a>
+                <a href="">Vòng tay</a>
+                <a href="">Vòng cổ</a>
+                <a href="">Nhẫn</a>
+                <a href="">Tất</a>
+                <a href="">Găng tay</a>
+                <a href="">Balo</a>
+                <a href="">Khẩu trang</a>
+                <a href="">Đồng Hồ</a>
+              </div>
             </div>
-            <div class="header-action">
-                <div class="support"><i class="fa-solid fa-headset"></i>
-                    <div class="trogiup hide">
-                        <b><p>Trợ giúp</p></b>
-                        <hr>
-                        <a href=""><i class="fa-solid fa-phone"></i><p>Hotline</p></a>
-                        <a href=""><i class="fa-solid fa-comment-dots"></i><p>Live chat</p></a>
-                        <a href=""><i class="fa-brands fa-facebook-messenger"></i><p>Messenger</p></a>
-                        <a href=""><i class="fa-solid fa-envelope"></i><p>Email</p></a>
-                        <a href=""><i class="fa-solid fa-magnifying-glass"></i><p>Tra cứu đơn hàng</p></a>
-                    </div>
-                </div>
-                <div class="account"><a href=""><i class="fa-solid fa-user-large"></i></a></div>
-                <div class="bag"><a href=""><i class="fa-solid fa-bag-shopping"></i></a></div>
+          </div>
+        </li>
+        <li>
+          <a href=""><b>NỮ</b></a>
+          <div class="sub-menu" style="margin-left: -140px">
+            <div class="chitiet">
+              <div>
+                <h4><a href="">GIÀY</a></h4>
+                <a href="">Tất cả giày</a>
+                <a href="">Chạy</a>
+                <a href="">Giày Nike</a>
+                <a href="">Giày Adidas</a>
+              </div>
+              <div>
+                <h4><a href="">Áo</a></h4>
+                <a href="">Tất cả áo</a>
+                <a href="">Áo sơ mi</a>
+                <a href="">Áo hoodie</a>
+              </div>
+              <div>
+                <h4><a href="">Quần</a></h4>
+                <a href="">Tất cả quần</a>
+                <a href="">Quần jean</a>
+                <a href="">Quần tây</a>
+                <a href="">Quần dài</a>
+              </div>
+              <div>
+                <h4><a href="">Phụ kiện</a></h4>
+                <a href="">Tất cả phụ kiện</a>
+                <a href="">Vòng tay</a>
+                <a href="">Vòng cổ</a>
+                <a href="">Nhẫn</a>
+                <a href="">Tất</a>
+                <a href="">Găng tay</a>
+                <a href="">Balo</a>
+                <a href="">Khẩu trang</a>
+                <a href="">Đồng Hồ</a>
+              </div>
+              <div>
+                <h4><a href="">Mỹ phẩm</a></h4>
+                <a href="">Tất cả mỹ phẩm</a>
+                <a href="">Son</a>
+                <a href="">Kem chống nắng</a>
+                <a href="">Xịt dưỡng ẩm</a>
+                <a href="">Phấn trang điểm</a>
+              </div>
             </div>
+          </div>
+        </li>
+        <li>
+          <a href=""><b>GIẢM GIÁ</b></a>
+          <div class="sub-menu" style="margin-left: -190px">
+            <div class="chitiet">
+              <div>
+                <h4><a href="">SALE 80%</a></h4>
+                <a href="">Giày cầu thủ Ronaldo</a>
+              </div>
+              <div>
+                <h4><a href="">SALE 60%</a></h4>
+                <a href="">Áo thun Mỹ</a>
+              </div>
+              <div>
+                <h4><a href="">SALE 20%</a></h4>
+                <a href="">Áo đấu Manchester United</a>
+                <a href="">Áo đấu cầu thủ Messi</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href=""><b>BỘ SỰU TẬP</b></a>
+        </li>
+        <li>
+          <a href=""><b>VỀ CHÚNG TÔI</b></a>
+        </li>
+      </div>
+      <div class="logo">
+        <img src="img/logo1.png" alt="" />
+      </div>
+      <div class="right-header">
+        <div class="search-form">
+          <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <input type="text" placeholder="Tìm kiếm sản phẩm" />
         </div>
+        <div class="header-action">
+          <div class="support">
+            <i class="fa-solid fa-headset"></i>
+            <div class="trogiup hide">
+              <b><p>Trợ giúp</p></b>
+              <hr />
+              <a href=""
+                ><i class="fa-solid fa-phone"></i>
+                <p>Hotline</p></a
+              >
+              <a href=""
+                ><i class="fa-solid fa-comment-dots"></i>
+                <p>Live chat</p></a
+              >
+              <a href=""
+                ><i class="fa-brands fa-facebook-messenger"></i>
+                <p>Messenger</p></a
+              >
+              <a href=""
+                ><i class="fa-solid fa-envelope"></i>
+                <p>Email</p></a
+              >
+              <a href=""
+                ><i class="fa-solid fa-magnifying-glass"></i>
+                <p>Tra cứu đơn hàng</p></a
+              >
+            </div>
+          </div>
+          <div class="account">
+            <a href=""><i class="fa-solid fa-user-large"></i></a>
+          </div>
+          <div class="bag">
+            <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+          </div>
+        </div>
+      </div>
     </header>
     <!-------------------------- main ------------------>
     <main>
-        <div class="fix-header"></div>
-        <div class="container">
-            <div class="intro-video">
-                <div class="title-video">
-                    <h1>DNN</h1>
-                    <p>Hãy để chúng tôi bảo vệ chân bạn</p>
-                </div>
-                <div class="abc">
-                <a class="btn-video" href="">
-                    <div class="arrow"><i class="fa-solid fa-arrow-left"></i></div>       
-                    <span>MUA NGAY</span><i></i>
-                </a>
-                </div>
-                <div class="sale">
-                    <img src="img/sale.png" alt="">
-                </div>
-                <div class="video1">
-                    <video src="video/indexvideo.mp4" autoplay muted loop></video>
-                </div>
-            </div>
-            <div class="new-product">
-                <div class="title-new-product">
-                    <h2>SẢN PHẨM MỚI</h2>
-                    <p>Bộ sưu tập mới đầy sang trọng và lịch lãm phù hợp với các quý ông</p>
-                </div>
-                <div class="slide-product">
-                    <div class="arrow-left"><i class="fa-solid fa-arrow-left"></i></div>
-                    <div class="arrow-right"><i class="fa-solid fa-arrow-right"></i></div>
-                    <div class="dot-img">
-                        <div class="dot active"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                    </div>
-                    <div class="slide"> 
-                        <img src="img/anh1.jpg" alt="">
-                        <img src="img/anh2.jpg" alt="">
-                        <img src="img/anh3.jpg" alt="">
-                        <img src="img/anh4.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="hot-product">
-                <div class="title-hot-product">
-                    <h2>SẢN PHẨM BÁN CHẠY NHẤT THÁNG</h2>
-                </div>
-                <div class="action-hot-product">
-                    <a href="">Xem tất cả</a>
-                    <div class="leftproduct"><i class="fa-solid fa-chevron-left"></i></div>
-                    <div class="rightproduct"><i class="fa-solid fa-chevron-right"></i></div>
-                </div>
-                <div class="list-product">
-                    <div>
-                        <img src="img/aoMU1.jpg" alt="">
-                        <div class="price">2.000.000<sup>đ</sup></div>
-                        <div class="name-product">Áo đấu Manchester United</div>
-                    </div>
-                    <div>
-                        <img src="img/jordan1-ko.jpg" alt="">
-                        <div class="price">1.400.000<sup>đ</sup></div>
-                        <div class="name-product">Jordan KO</div>
-                    </div>
-                    <div>
-                        <img src="img/tatnike.jpg" alt="">
-                        <div class="price">50.000<sup>đ</sup></div>
-                        <div class="name-product">Tất Nike</div>
-                    </div>
-                    <div>
-                        <img src="img/aopolo.jpg" alt="">
-                        <div class="price">350.000<sup>đ</sup></div>
-                        <div class="name-product">Áo polo</div>
-                    </div>
-                    <div>
-                        <img src="img/balo.jpg" alt="">
-                        <div class="price">550.000<sup>đ</sup></div>
-                        <div class="name-product">Balo</div>
-                    </div>
-                    <div>
-                        <img src="img/balo.jpg" alt="">
-                        <div class="price">550.000<sup>đ</sup></div>
-                        <div class="name-product">Balo</div>
-                    </div>
-                    <div>
-                        <img src="img/balo.jpg" alt="">
-                        <div class="price">550.000<sup>đ</sup></div>
-                        <div class="name-product">Balo</div>
-                    </div>
-                    <div>
-                        <img src="img/balo.jpg" alt="">
-                        <div class="price">550.000<sup>đ</sup></div>
-                        <div class="name-product">Balo</div>
-                    </div>
-                    <div>
-                        <img src="img/balo.jpg" alt="">
-                        <div class="price">550.000<sup>đ</sup></div>
-                        <div class="name-product">Balo</div>
-                    </div>
-                </div>
-            </div>
+      <div class="fix-header"></div>
+      <div class="container">
+        <div class="intro-video">
+          <div class="title-video">
+            <h1>DNN</h1>
+            <p>Hãy để chúng tôi bảo vệ chân bạn</p>
+            <a class="btn-video" href="">
+              <div class="arrow"><i class="fa-solid fa-arrow-left"></i></div>
+              <span>MUA NGAY</span><i></i>
+            </a>
+          </div>
+          <video src="video/indexvideo.mp4" autoplay muted loop></video>
         </div>
+        <div class="new-product">
+          <div class="title-new-product">
+            <h2>SẢN PHẨM MỚI</h2>
+            <p>
+              Bộ sưu tập mới đầy sang trọng và lịch lãm phù hợp với các quý ông
+            </p>
+          </div>
+          <div class="slide-product">
+            <div class="arrow-left">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="arrow-right">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="slide">
+              <img src="img/anh1.jpg" alt="" />
+              <img src="img/anh2.jpg" alt="" />
+              <img src="img/anh3.jpg" alt="" />
+              <img src="img/anh4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="hot-product">
+          <div class="title-hot-product">
+            <h2>SẢN PHẨM BÁN CHẠY NHẤT THÁNG</h2>
+          </div>
+          <div class="action-hot-product">
+            <a href="">Xem tất cả</a>
+            <div class="leftproduct">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="rightproduct">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="list-product">
+            <div class="list-item">
+              <a href="">
+                <img src="img/aoMU1.jpg" alt="" />
+                <div class="price">2.000.000<sup>đ</sup></div>
+                <div class="name-product">Áo đấu Manchester United</div>
+              </a>
+            </div>
+            <div class="list-item">
+              <a href="">
+                <img src="img/jordan1-ko.jpg" alt="" />
+                <div class="price">1.400.000<sup>đ</sup></div>
+                <div class="name-product">Jordan KO</div>
+              </a>
+            </div>
+            <div class="list-item">
+              <a href="">
+                <img src="img/tatnike.jpg" alt="" />
+                <div class="price">50.000<sup>đ</sup></div>
+                <div class="name-product">Tất Nike</div>
+              </a>
+            </div>
+            <div class="list-item">
+              <a href="">
+                <img src="img/aopolo.jpg" alt="" />
+                <div class="price">350.000<sup>đ</sup></div>
+                <div class="name-product">Áo polo</div>
+              </a>
+            </div>
+            <div class="list-item">
+              <a href="">
+                <img src="img/balo.jpg" alt="" />
+                <div class="price">550.000<sup>đ</sup></div>
+                <div class="name-product">Balo</div>
+              </a>
+            </div>
+            <div class="list-item">
+              <a href="">
+                <img src="img/giaydabong1.jpg" alt="" />
+                <div class="price">2.550.000<sup>đ</sup></div>
+                <div class="name-product">Giày thể thao</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!-------------------------- footer -------------------->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="information">
+        <div class="logo2"><img src="img/logo1.png" alt="" /></div>
+        <div class="diachi">
+          <p><b>Địa chỉ:</b> Nam Lý, Đồng Hới, Quảng Bình</p>
+          <br />
+          <p><b>Số điện thoại: </b>070 597 5950</p>
+        </div>
+        <div class="facebook">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="youtube">
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="instagram">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="gioithieu">
+        <b><p>Giới thiệu</p></b>
+        <a href="">Về chúng tôi</a>
+        <a href="">Tuyển dụng</a>
+        <a href="">Hệ thống cửa hàng</a>
+      </div>
+      <div class="dichvu">
+        <b><p>Dịch vụ khách hàng</p></b>
+        <a href="">Chính sách điều khoản</a>
+        <a href="">Hướng dẫn mua hàng</a>
+        <a href="">Chính sách thanh toán</a>
+        <a href="">Chính sách đổi trả</a>
+      </div>
+      <div class="lienhe">
+        <b><p>Liên hệ</p></b>
+        <a href="">Hotline</a>
+        <a href="">Email</a>
+        <a href="">Messenger</a>
+        <a href="">Liên hệ</a>
+      </div>
+      <div class="rightfooter">
+        <div class="dkthongbao">
+          <div class="textthongbao">
+            <b><p>Nhận thông báo về hoạt động của DNN</p></b>
+          </div>
+          <input type="text" placeholder="Nhập địa chỉ email" />
+          <button type="submit">Đăng ký</button>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
