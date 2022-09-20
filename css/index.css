@@ -27,6 +27,7 @@ header {
   margin-left: 60px;
   font-size: 16px;
   margin-top: 40px;
+  font-weight: 400px;
 }
 .main-menu li {
   padding: 0 14px;
@@ -47,6 +48,7 @@ header {
   margin-left: -58px;
 }
 .right-header {
+  position: relative;
   margin-right: 60px;
   height: 100%;
   display: flex;
@@ -128,7 +130,7 @@ header {
 .sub-menu {
   position: absolute;
   width: 99.19vmax;
-  margin-top: 42px;
+  margin-top: 41px;
   background-color: white;
   padding: 35px 0 25px 0;
   font-size: 16px;
@@ -414,7 +416,7 @@ h4 {
   height: 350px;
 }
 .diachi {
-  margin-top: 100px;
+  margin-top: 10px;
 }
 .footer p {
   padding-top: 20px;
