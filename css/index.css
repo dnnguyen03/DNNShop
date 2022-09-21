@@ -17,6 +17,9 @@ header {
   z-index: 5;
   transition: 0.2s;
 }
+a {
+  color: black;
+}
 .fix-header {
   height: 100px;
   width: 100%;
@@ -128,6 +131,9 @@ header {
 .trogiup i {
   margin: 0;
 }
+.bars {
+  display: none;
+}
 .sub-menu {
   position: absolute;
   width: 99.19vmax;
@@ -169,6 +175,18 @@ h4 {
 .sub-menu a {
   display: table;
   margin-bottom: 12px;
+}
+.menu-overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 5;
+}
+.menu-mobile {
+  overflow: hidden;
+  display: none;
 }
 
 /* ---------------------------------main---------------------------------- */
@@ -384,9 +402,11 @@ h4 {
 @keyframes hieuungmenu {
   0% {
     transform: translateY(10%);
+    opacity: 0;
   }
   100% {
     transform: translateY(0%);
+    opacity: 1;
   }
 }
 
@@ -600,12 +620,103 @@ h4 {
   .main-menu {
     display: none;
   }
-  .right-header {
+  .search-form input,
+  .fa-user-large,
+  .fa-headset {
     display: none;
+  }
+  .bars {
+    display: block;
+  }
+  .menu-mobile {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 80%;
+    background-color: white;
+    z-index: 5;
+    right: 0;
+    padding: 20px 10px;
+    transform: translateX(100%);
+    transition: 0.25s;
+  }
+  .check-menu:checked ~ .menu-overlay {
+    display: block;
+  }
+  .check-menu:checked ~ .menu-mobile {
+    transform: translateX(0);
+  }
+  .close-menu {
+    font-size: 25px;
+    margin-left: 90%;
+    margin-top: 5%;
+  }
+  .main-menu-mobile {
+    transform: translateX(0);
+    transition: 0.25s;
+  }
+  .main-menu-mobile > div {
+    margin: 8% 0;
+    display: flex;
+  }
+  .main-menu-mobile p {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  .check-nextmenu:checked ~ .main-menu-mobile {
+    transform: translateX(-100%);
+  }
+  .main-menu-mobile > div > input:checked ~ .submenu-mobile {
+    visibility: visible;
+  }
+  .next-submenu {
+    position: absolute;
+    padding-left: 88%;
+  }
+  .pre-submenu {
+    display: flex;
+    width: 5px;
+  }
+  .hideb {
+    display: none;
+  }
+  .submenu-mobile {
+    position: absolute;
+    width: 100%;
+    transform: translateX(115%);
+  }
+  .submenu-mobile h6 {
+    margin-top: 20px;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  .submenu-mobile p {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .submenu-mobile > div {
+    position: absolute;
+  }
+  .submenu-mobile > div > p {
+    margin-left: 0;
+    color: #636571;
+    margin: 15px 0;
+  }
+  .search-form {
+    margin-top: -15px;
+    margin-right: 15px;
+  }
+  .header-action {
+    margin-top: -15px;
+    margin-right: -50px;
   }
   .btn-video {
     font-size: 12px;
     padding: 8px 10px;
+  }
+  .btn-video:hover {
+    box-shadow: none;
   }
   .slick-dots {
     bottom: 0;
@@ -680,7 +791,6 @@ h4 {
   .rightfooter {
     margin: 0 auto;
     margin-top: -45px;
-    height: 270px;
     width: 100%;
   }
   .footer .dkthongbao {

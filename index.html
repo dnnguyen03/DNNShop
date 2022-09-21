@@ -184,11 +184,96 @@
           <div class="bag">
             <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
           </div>
+          <label for="menu-mobile-input" class="bars"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
         </div>
       </div>
     </header>
     <!-------------------------- main ------------------>
     <main>
+      <input
+        type="checkbox"
+        class="check-menu"
+        id="menu-mobile-input"
+        hidden
+        style="position: absolute; z-index: 10"
+      />
+      <label for="menu-mobile-input" class="menu-overlay"></label>
+      <div class="menu-mobile">
+        <label for="menu-mobile-input" class="close-menu">
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+        <input
+          type="checkbox"
+          name=""
+          class="check-nextmenu"
+          hidden
+          id="next-menu-input"
+        />
+        <div class="main-menu-mobile">
+          <div>
+            <p>NAM</p>
+            <label for="next-menu-input" class="next-submenu">
+              <i class="fa-solid fa-chevron-right"></i>
+            </label>
+            <div class="submenu-mobile hideb">
+              <label for="next-menu-input" class="pre-submenu">
+                <i class="fa-solid fa-chevron-left"></i>
+                <p>ALL</p>
+              </label>
+              <div>
+                <h6><a href="">NAM</a></h6>
+                <p>Giày</p>
+                <p>Áo</p>
+                <p>Quần</p>
+                <p>Phụ kiện</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>NỮ</p>
+            <label for="next-menu-input" class="next-submenu">
+              <i class="fa-solid fa-chevron-right"></i>
+            </label>
+            <div class="submenu-mobile hideb">
+              <label for="next-menu-input" class="pre-submenu">
+                <i class="fa-solid fa-chevron-left"></i>
+                <p>ALL</p>
+              </label>
+              <div>
+                <h6><a href="">NỮ</a></h6>
+                <p>Giày</p>
+                <p>Áo</p>
+                <p>Quần</p>
+                <p>Phụ kiện</p>
+                <p>Mỹ phẩm</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>GIẢM GIÁ</p>
+            <label for="next-menu-input" class="next-submenu">
+              <i class="fa-solid fa-chevron-right"></i>
+            </label>
+            <div class="submenu-mobile hideb">
+              <label for="next-menu-input" class="pre-submenu">
+                <i class="fa-solid fa-chevron-left"></i>
+                <p>ALL</p>
+              </label>
+              <div>
+                <h6><a href="">Giảm giá</a></h6>
+                <p>Sale 80%</p>
+                <p>Sale 60%</p>
+                <p>Sale 20%</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href=""><p>VỀ CHÚNG TÔI</p> </a>
+          </div>
+        </div>
+      </div>
       <div class="fix-header"></div>
       <div class="container">
         <div class="intro-video">

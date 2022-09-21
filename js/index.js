@@ -25,6 +25,26 @@ phu.addEventListener("click", (e) => {
   }
 });
 
+const suball = document.querySelectorAll(".submenu-mobile");
+const labelElement = document.getElementsByClassName("next-submenu");
+const setmenucap2 = document.querySelectorAll(".submenu-mobile");
+console.log(setmenucap2);
+for (let i = 1; i < setmenucap2.length; i++) {
+  console.log(i);
+  setmenucap2[i].style.marginTop = "-" + i * 47 + "px";
+}
+
+const [...rest] = labelElement;
+//handle
+rest.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    for (let i = 0; i < suball.length; i++) {
+      suball[i].classList.add("hideb");
+    }
+    suball[index].classList.remove("hideb");
+  });
+});
+
 ///slide
 // function slide(index) {
 //   imgSlide.style.left = "-" + index * 100 + "%";
@@ -106,7 +126,6 @@ $(document).ready(function () {
         settings: {
           arrows: false,
           slidesToShow: 1,
-          infinite: false,
           slidesToScroll: 1,
           dots: true,
         },
