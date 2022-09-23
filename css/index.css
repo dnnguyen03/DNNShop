@@ -100,7 +100,7 @@ a {
   font-size: 15px;
   padding: 15px;
   margin-left: -165px;
-  margin-top: 80px;
+  margin-top: 30px;
   height: 260px;
   width: 200px;
   border-radius: 5px;
@@ -111,6 +111,8 @@ a {
 }
 .trogiup a {
   color: black;
+  display: flex;
+  margin: 11% 0;
 }
 .phu {
   width: 100%;
@@ -119,7 +121,6 @@ a {
   z-index: 3;
 }
 .trogiup p {
-  margin: 20px 0;
   margin-left: 40px;
 }
 .trogiup p:nth-child(1) {
