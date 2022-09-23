@@ -148,6 +148,16 @@ $(document).ready(function () {
           dots: true,
         },
       },
+      {
+        breakpoint: 1023,
+        settings: {
+          arrows: false,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false,
+          dots: true,
+        },
+      },
     ],
   });
 });

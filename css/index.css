@@ -206,12 +206,13 @@ h4 {
   position: absolute;
   color: white;
   font-size: 35px;
-  margin: 16% 0 0 65%;
+  margin-left: 60%;
+  margin-top: 15%;
 }
 .intro-video {
   margin: 0 auto;
   width: 100%;
-  height: 100%;
+  height: 90%;
   overflow: hidden;
 }
 .intro-video video {
@@ -549,10 +550,10 @@ h4 {
 }
 
 /* --------------------------------reponsive ---------------------*/
+/* ------Mobile & Tablet------ */
 
-/* ------- Mobile -------- */
-@media only screen and (max-width: 46.1875em) {
-  /* -----------header----------- */
+@media only screen and (max-width: 63.9375em) {
+  /* ---------header------ */
   .phu {
     width: 100%;
   }
@@ -587,6 +588,7 @@ h4 {
     margin-top: -15px;
     right: 0;
   }
+
   /* ------------main------------ */
   /* ----menu mobile------ */
   .main-menu {
@@ -699,6 +701,15 @@ h4 {
     margin-left: 15px !important;
     color: black !important;
   }
+  /* ---------------hot product --------------*/
+  .action-hot-product {
+    display: none;
+  }
+}
+
+/* ------- Mobile -------- */
+@media only screen and (max-width: 46.1875em) {
+  /* -----header----- */
   /* ----video---- */
   .intro-video {
     height: 220px;
@@ -774,6 +785,10 @@ h4 {
   .slide-product i {
     display: none;
   }
+  .new-product .slick-track img {
+    height: 250px;
+    object-fit: cover;
+  }
   /* -----hot product  silde----*/
   .title-hot-product {
     font-size: 15px;
@@ -793,13 +808,7 @@ h4 {
     margin-top: 15px;
     margin-left: 40%;
   }
-  .action-hot-product {
-    display: none;
-  }
-  .new-product .slick-track img {
-    height: 250px;
-    object-fit: cover;
-  }
+
   /* -----------footer----------- */
   .footer {
     margin-top: 10px;
@@ -814,8 +823,69 @@ h4 {
   }
 }
 
-/*-------- Tablet -------- */
+/*----------------------------- Tablet --------------------------- */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  /* --------------------header--------------------- */
+  header {
+    width: 100%;
+    height: 100px;
+    border: none;
+  }
+  .fix-header {
+    height: 100px;
+  }
+  .logo img {
+    margin-top: -100px;
+    margin-left: -20px;
+  }
+  .right-header i {
+    font-size: 30px;
+    margin: 0 15px;
+    margin-top: 15px;
+  }
+  .support {
+    display: none;
+  }
+  .search-form {
+    margin-right: 0;
+  }
+  .menu-mobile i {
+    font-size: 30px;
+  }
+  .main-menu-mobile p {
+    font-size: 30px;
+  }
+  .submenu-mobile h6 {
+    font-size: 30px;
+  }
+  .submenu-mobile p {
+    font-size: 26px;
+  }
+  .submenu-mobile-3-detail a {
+    font-size: 22px;
+  }
+  /* -------------main---------------- */
+  .title-video {
+    margin-top: 3%;
+  }
+  /* ---------new product------------ */
+  .new-product .slick-track img {
+    height: 550px;
+    object-fit: cover;
+  }
+  /* ---------hot product------------- */
+  .hot-product {
+    padding-bottom: 30px;
+  }
+  .list-product .slick-dots button {
+    border: 1px solid #636571;
+  }
+  .list-product .slick-dots .slick-active button {
+    background-color: #636571;
+  }
+  .list-product .slick-dots {
+    margin-bottom: -60px;
+  }
   /* --------footer ----------*/
   .footer {
     padding: 30px 0;
