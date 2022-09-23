@@ -103,7 +103,7 @@ $(document).ready(function () {
     dots: true,
     draggable: false,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2500,
     prevArrow: $(".arrow-left"),
     nextArrow: $(".arrow-right"),
     responsive: [
