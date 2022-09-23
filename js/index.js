@@ -8,6 +8,10 @@ const phu = document.querySelector(".phu");
 // const prevHotProduct = document.querySelector(".leftproduct i");
 // const nextHotProduct = document.querySelector(".rightproduct i");
 // const listproduct = document.querySelector(".list-product");
+const suball = document.querySelectorAll(".submenu-mobile");
+const labelElement = document.getElementsByClassName("next-submenu");
+const labelElementtwo = document.getElementsByClassName("next-submenu-2");
+const suballtwo = document.querySelectorAll(".submenu-mobile-3");
 
 ////click->show
 function show() {
@@ -24,15 +28,20 @@ phu.addEventListener("click", (e) => {
     show();
   }
 });
-
-const suball = document.querySelectorAll(".submenu-mobile");
-const labelElement = document.getElementsByClassName("next-submenu");
-const setmenucap2 = document.querySelectorAll(".submenu-mobile");
-console.log(setmenucap2);
-for (let i = 1; i < setmenucap2.length; i++) {
-  console.log(i);
-  setmenucap2[i].style.marginTop = "-" + i * 47 + "px";
-}
+///hiden scroll menu
+const openmenu = document.querySelector(".bars");
+const closemenu1 = document.querySelector(".menu-overlay");
+const closemenu2 = document.querySelector(".close-menu");
+openmenu.addEventListener("click", () => {
+  $("body").css({ position: "sticky", overflow: "hidden" });
+});
+closemenu1.addEventListener("click", () => {
+  $("body").css({ position: "static", overflow: "auto" });
+});
+closemenu2.addEventListener("click", () => {
+  $("body").css({ position: "static", overflow: "auto" });
+});
+////
 
 const [...rest] = labelElement;
 //handle
@@ -42,6 +51,15 @@ rest.forEach((item, index) => {
       suball[i].classList.add("hideb");
     }
     suball[index].classList.remove("hideb");
+  });
+});
+const [...resttwo] = labelElementtwo;
+resttwo.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    for (let i = 0; i < suballtwo.length; i++) {
+      suballtwo[i].classList.add("hideb");
+    }
+    suballtwo[index].classList.remove("hideb");
   });
 });
 
