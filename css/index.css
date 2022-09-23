@@ -136,13 +136,15 @@ a {
 }
 .sub-menu {
   position: absolute;
-  width: 99.19vmax;
+  width: 100vmax;
   margin-top: 42px;
+  left: 0;
   background-color: white;
   padding: 35px 0 25px 0;
   font-size: 16px;
   visibility: hidden;
   border-bottom: 1px solid #e5e5e5;
+  right: 0;
   z-index: 3;
   transition: 0.1s;
 }
@@ -269,7 +271,7 @@ h4 {
 }
 .slick-dots {
   position: absolute;
-  bottom: 120px;
+  bottom: 8%;
   left: 50%;
   transform: translate(-50%);
   z-index: 3;
@@ -296,27 +298,33 @@ h4 {
   font-size: 40px;
   position: absolute;
   z-index: 1;
-  margin-top: 340px;
+  top: 50%;
   color: white;
   cursor: pointer;
+  outline: none;
+  transition: ease-out 0.3s;
 }
 .arrow-left {
-  margin-left: 30px;
+  left: 2%;
 }
 .arrow-right {
-  margin-left: 1820px;
+  right: 2%;
 }
 .arrow-left i,
 .arrow-right i {
-  padding: 5px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: ease-out 0.3s;
 }
 .arrow-left i:hover {
+  box-shadow: inset -65px 0 0 0 white;
   background-color: black;
-  border: 1px solid white;
+  color: black;
 }
 .arrow-right i:hover {
+  color: black;
+  box-shadow: inset 65px 0 0 0 white;
   background-color: black;
-  border: 1px solid white;
 }
 .active {
   background-color: white;
