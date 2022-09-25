@@ -127,6 +127,7 @@ window.onscroll = function () {
   } else {
     document.querySelector(".header").style.top = "-100px";
     document.querySelector(".trogiup").classList.add("hide");
+    phu.classList.add("hide");
   }
   prevScrollpos = currentScrollPos;
 };
@@ -142,6 +143,7 @@ $(document).ready(function () {
       {
         breakpoint: 480,
         settings: {
+          draggable: true,
           arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -151,11 +153,22 @@ $(document).ready(function () {
       {
         breakpoint: 1023,
         settings: {
+          draggable: true,
           arrows: false,
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: false,
           dots: true,
+        },
+      },
+      {
+        breakpoint: 1289,
+        settings: {
+          draggable: true,
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          infinite: false,
+          arrows: true,
         },
       },
     ],
