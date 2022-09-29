@@ -123,9 +123,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.querySelector(".header").style.top = "0";
+    document.querySelector(".header").style.transform = "translateY(0)";
   } else {
-    document.querySelector(".header").style.top = "-100px";
+    document.querySelector(".header").style.transform = "translateY(-100px)";
     document.querySelector(".trogiup").classList.add("hide");
     phu.classList.add("hide");
   }
