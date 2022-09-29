@@ -28,6 +28,7 @@ phu.addEventListener("click", (e) => {
     show();
   }
 });
+
 ///hiden scroll menu
 const openmenu = document.querySelector(".bars");
 const closemenu1 = document.querySelector(".menu-overlay");
@@ -43,8 +44,8 @@ closemenu2.addEventListener("click", () => {
 });
 ////
 
-const [...rest] = labelElement;
 //handle
+const [...rest] = labelElement;
 rest.forEach((item, index) => {
   item.addEventListener("click", () => {
     for (let i = 0; i < suball.length; i++) {
@@ -119,13 +120,21 @@ $(document).ready(function () {
 });
 
 ////header
+function responHeader(x) {
+  if (x.matches) {
+    document.querySelector(".header").style.transform = "translateY(-69px)";
+  } else {
+    document.querySelector(".header").style.transform = "translateY(-100px)";
+  }
+}
 var prevScrollpos = window.pageYOffset;
+var x = window.matchMedia("(max-width: 739px)");
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.querySelector(".header").style.transform = "translateY(0)";
   } else {
-    document.querySelector(".header").style.transform = "translateY(-100px)";
+    responHeader(x);
     document.querySelector(".trogiup").classList.add("hide");
     phu.classList.add("hide");
   }

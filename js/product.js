@@ -22,6 +22,19 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
+///hiden scroll menu
+const openmenu = document.querySelector(".bars");
+const closemenu1 = document.querySelector(".menu-overlay");
+const closemenu2 = document.querySelector(".close-menu");
+openmenu.addEventListener("click", () => {
+  $("body").css({ position: "sticky", overflow: "hidden" });
+});
+closemenu1.addEventListener("click", () => {
+  $("body").css({ position: "static", overflow: "auto" });
+});
+closemenu2.addEventListener("click", () => {
+  $("body").css({ position: "static", overflow: "auto" });
+});
 /////
 const support = document.querySelector(".support i");
 const phu = document.querySelector(".phu");
@@ -43,7 +56,6 @@ phu.addEventListener("click", (e) => {
 const subfilter = document.querySelectorAll(".sub-filter");
 const select = document.querySelectorAll(".select");
 const iconfilter = document.querySelectorAll(".icon-down i");
-console.log(iconfilter);
 select.forEach((item, index) => {
   item.addEventListener("click", () => {
     iconfilter[index].classList.toggle("rotate180");
@@ -102,3 +114,28 @@ priceInput.forEach((input) => {
   });
 });
 ////////
+////
+
+//handle
+const suball = document.querySelectorAll(".submenu-mobile");
+const labelElement = document.getElementsByClassName("next-submenu");
+const labelElementtwo = document.getElementsByClassName("next-submenu-2");
+const suballtwo = document.querySelectorAll(".submenu-mobile-3");
+const [...rest] = labelElement;
+rest.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    for (let i = 0; i < suball.length; i++) {
+      suball[i].classList.add("hideb");
+    }
+    suball[index].classList.remove("hideb");
+  });
+});
+const [...resttwo] = labelElementtwo;
+resttwo.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    for (let i = 0; i < suballtwo.length; i++) {
+      suballtwo[i].classList.add("hideb");
+    }
+    suballtwo[index].classList.remove("hideb");
+  });
+});

@@ -61,8 +61,10 @@ a {
   display: flex;
   color: black;
 }
+
 .search-form {
   display: flex;
+  align-items: center;
 }
 .search-form input {
   height: 40px;
