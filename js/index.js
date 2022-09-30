@@ -1,5 +1,5 @@
 const support = document.querySelector(".support i");
-const phu = document.querySelector(".phu");
+const phu = document.querySelector(".overlay-trogiup");
 // const imgset = document.querySelectorAll(".slide img");
 // const imgSlide = document.querySelector(".slide");
 // const prevSlide = document.querySelector(".arrow-left i");

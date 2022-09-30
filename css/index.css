@@ -16,7 +16,7 @@ header {
   border-bottom: 1px solid #e5e5e5;
   position: fixed;
   z-index: 5;
-  transition: 0.2s;
+  transition: 0.25s;
   display: flex;
   justify-content: space-between;
 }
@@ -25,13 +25,15 @@ a {
 }
 
 .main-menu {
-  height: 100%;
+  margin-top: auto;
+  height: 60%;
   display: flex;
   margin-left: 3%;
   font-size: 16px;
-  align-items: center;
+  align-items: flex-start;
 }
 .main-menu li {
+  height: 100%;
   padding: 0 14px;
 }
 .main-menu li a {
@@ -99,24 +101,26 @@ a {
   position: absolute;
   font-size: 15px;
   padding: 15px;
-  right: 0;
-  top: 60px;
+  right: 15px;
+  top: 100px;
   height: 260px;
   width: 200px;
   border-radius: 5px;
   background-color: white;
   border: 1px solid #636571;
-  z-index: 3;
+  z-index: 6;
 }
 .trogiup a {
   color: black;
   display: flex;
   margin: 10% 0;
 }
-.phu {
-  width: 100%;
-  height: 100vh;
+.overlay-trogiup {
   position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
   z-index: 6;
 }
 .trogiup p {

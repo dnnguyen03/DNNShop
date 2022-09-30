@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/product.css" />
   </head>
   <body>
-    <div class="phu hide"></div>
     <!-------------------------- header --------------------->
     <header class="header">
       <div class="main-menu">
@@ -146,6 +145,7 @@
         <div class="header-action">
           <div class="support">
             <i class="fa-solid fa-headset"></i>
+            <div class="overlay-trogiup hide"></div>
             <div class="trogiup hide">
               <b><p>Trợ giúp</p></b>
               <hr />
@@ -184,22 +184,26 @@
       </div>
       <div class="wall-header">
         <div class="title-product"><h4>Tất cả</h4></div>
-
-        <div class="filter-prod">
-          <label for="filter-prod-open" class="select">
-            <div class="item-filter">Sắp xếp theo</div>
-            <div class="icon-down">
-              <i class="fa-solid fa-chevron-down"></i>
+        <div class="all-filter">
+          <div class="filter-prod">
+            <label for="filter-prod-open" class="select">
+              <div class="item-filter">Sắp xếp theo</div>
+              <div class="icon-down">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </label>
+            <input type="checkbox" class="" id="filter-prod-open" hidden />
+            <div class="sub-filter-prod">
+              <a href="">Mặc định</a>
+              <a href="">Mới nhất</a>
+              <a href="">Mua nhiều nhất</a>
+              <a href="">Được yêu thích nhất</a>
+              <a href="">Giá cao đến thấp</a>
+              <a href="">Giá thấp đến cao</a>
             </div>
-          </label>
-          <input type="checkbox" class="" id="filter-prod-open" hidden />
-          <div class="sub-filter-prod">
-            <a href="">Mặc định</a>
-            <a href="">Mới nhất</a>
-            <a href="">Mua nhiều nhất</a>
-            <a href="">Được yêu thích nhất</a>
-            <a href="">Giá cao đến thấp</a>
-            <a href="">Giá thấp đến cao</a>
+          </div>
+          <div class="icon-filter">
+            <i class="fa-solid fa-filter"></i>
           </div>
         </div>
       </div>
@@ -499,7 +503,8 @@
     <main>
       <div class="container">
         <div class="sidebar-prod">
-          <div class="filter-by-side">
+          <div class="overlay-filter hidec"></div>
+          <div class="filter-by-side hidec">
             <ul class="list-side">
               <li class="item-side size">
                 <label class="select" for="A">
@@ -639,7 +644,7 @@
                   <img src="img/aoMU1.jpg" alt="" />
                   <img src="img/aoMU2.jpg" alt="" />
                 </div>
-                <div class="nameProd">Áo đấu Manchester United</div>
+                <div class="nameProd">Áo Manchester United</div>
               </a>
               <div class="price-bag">
                 <div class="priceProd">2.000.000<sup>đ</sup></div>
@@ -837,14 +842,6 @@
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="js/product.js"></script>
   </body>
