@@ -151,12 +151,12 @@ a {
   z-index: 3;
   transition: 0.1s;
 }
-.chitiet {
+.item-list-submenu {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.main-menu > li:hover .chitiet {
+.main-menu > li:hover .item-list-submenu {
   animation: hieuungmenu 0.3s linear;
 }
 .sub-menu a:hover {
@@ -691,9 +691,13 @@ input[type="range"]::-moz-range-thumb {
     display: flex;
     justify-content: space-between;
   }
+  .account,
   .search-form input,
   .fa-user-large,
   .fa-headset {
+    display: none;
+  }
+  .support {
     display: none;
   }
   .bars {

@@ -5,22 +5,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/index.css" />
-
-    <title>DNN Shop</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Log in</title>
   </head>
   <body>
-    <!-------------------------- header --------------------->
     <header class="header">
       <div class="main-menu">
         <li>
@@ -143,7 +139,7 @@
         </li>
       </div>
       <div class="logo">
-        <img src="img/logo1.png" alt="" />
+        <a href="index.html"><img src="img/logo1.png" alt="" /></a>
       </div>
       <div class="right-header">
         <div class="search-form">
@@ -180,7 +176,7 @@
             </div>
           </div>
           <div class="account">
-            <a href="login.html"><i class="fa-solid fa-user-large"></i></a>
+            <a href=""><i class="fa-solid fa-user-large"></i></a>
           </div>
           <div class="bag">
             <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
@@ -191,7 +187,6 @@
         </div>
       </div>
     </header>
-    <!-------------------------- main ------------------>
     <main>
       <input type="checkbox" class="check-menu" id="menu-mobile-input" hidden />
       <label for="menu-mobile-input" class="menu-overlay"> </label>
@@ -485,109 +480,96 @@
         </div>
       </div>
       <div class="fix-header"></div>
-      <div class="container">
-        <div class="intro-video">
-          <div class="title-video activeshow">
-            <h1 class="showtotop">DNN</h1>
-            <p class="showtotop delay-02">
-              Hãy để chúng tôi bảo vệ đôi chân bạn
-            </p>
-            <a class="btn-video showtotop delay-02" href="product.html">
-              <div class="arrow"><i class="fa-solid fa-arrow-left"></i></div>
-              <span>MUA NGAY</span><i></i>
-            </a>
+      <div class="container-main">
+        <div class="dnn-login">
+          <div class="logo-login">
+            <img src="img/logotabweb.jpg" alt="" />
           </div>
-          <video src="video/indexvideo.mp4" autoplay muted loop></video>
-        </div>
-        <div class="new-product">
-          <div class="title-new-product">
-            <h2>SẢN PHẨM MỚI</h2>
-            <p>
-              Bộ sưu tập mới đầy sang trọng và lịch lãm phù hợp với các quý ông
-            </p>
-            <div class="btn-new-product">
-              <a href="index.html"><button>Xem ngay</button></a>
+          <div class="signin">
+            <div class="title-login">Đăng nhập DNN</div>
+            <div class="account-signin">
+              <input type="text" placeholder="Tên đăng nhập" />
             </div>
-          </div>
-          <div class="slide-product">
-            <div class="arrow-left">
-              <i class="fa-solid fa-arrow-left"></i>
+            <div class="signin-password">
+              <input
+                type="password"
+                id="input-signin-password"
+                placeholder="Mật khẩu"
+              />
+              <div class="eye-signin">
+                <i id="eye1" class="fa-solid fa-eye"></i>
+                <i id="eye2" class="fa-solid fa-eye-slash"></i>
+              </div>
             </div>
-            <div class="arrow-right">
-              <i class="fa-solid fa-arrow-right"></i>
+            <div class="remember-forgot-password">
+              <div class="remember-password">
+                <input type="checkbox" name="" id="remember" />
+                <label for="remember">Nhớ mật khẩu</label>
+              </div>
+              <div class="forgot-password">
+                <p class="next-login">Quên mật khẩu ?</p>
+              </div>
             </div>
-            <div class="slide">
-              <img src="img/anh1.jpg" alt="" />
-              <img src="img/anh2.jpg" alt="" />
-              <img src="img/anh3.jpg" alt="" />
-              <img src="img/anh4.jpg" alt="" />
+            <div class="btn-signin">
+              <button type="submit">Đăng nhập</button>
             </div>
-          </div>
-        </div>
-        <div class="hot-product">
-          <div class="title-hot-product">
-            <h2>SẢN PHẨM BÁN CHẠY NHẤT</h2>
-          </div>
-          <div class="action-hot-product">
-            <a href="product.html">Xem tất cả</a>
-            <div class="leftproduct">
-              <i class="fa-solid fa-chevron-left"></i>
-            </div>
-            <div class="rightproduct">
-              <i class="fa-solid fa-chevron-right"></i>
+            <div class="member">
+              <pre>Chưa có tài khoản ?</pre>
+              <p class="next-login">Đăng ký</p>
             </div>
           </div>
-          <div class="list-product">
-            <div class="list-item">
-              <a href="">
-                <img src="img/aoMU1.jpg" alt="" />
-                <div class="price">2.000.000<sup>đ</sup></div>
-                <div class="name-product">Áo đấu Manchester United</div>
-              </a>
+          <div class="signup hide-login">
+            <div class="title-login">Đăng ký DNN</div>
+            <div class="email-signup">
+              <input type="text" placeholder="Địa chỉ Email" />
             </div>
-            <div class="list-item">
-              <a href="">
-                <img src="img/jordan1-ko.jpg" alt="" />
-                <div class="price">1.400.000<sup>đ</sup></div>
-                <div class="name-product">Jordan KO</div>
-              </a>
+            <div class="information-signup">
+              <div class="firstname-signup">
+                <input type="text" placeholder="Họ" />
+              </div>
+              <div class="lastname-signup">
+                <input type="text" placeholder="Tên" />
+              </div>
+              <div class="birthday-signup">
+                <input
+                  type="datetime"
+                  name=""
+                  id="birthday-signup"
+                  placeholder="Ngày sinh"
+                />
+              </div>
             </div>
-            <div class="list-item">
-              <a href="">
-                <img src="img/tatnike.jpg" alt="" />
-                <div class="price">50.000<sup>đ</sup></div>
-                <div class="name-product">Tất Nike</div>
-              </a>
+            <div class="account-signup">
+              <input type="text" placeholder="Tên đăng nhập" />
             </div>
-            <div class="list-item">
-              <a href="">
-                <img src="img/aopolo.jpg" alt="" />
-                <div class="price">350.000<sup>đ</sup></div>
-                <div class="name-product">Áo polo</div>
-              </a>
+            <div class="signup-password">
+              <input type="password" id="" placeholder="Mật khẩu" />
+              <input type="password" id="" placeholder="Nhập lại mật khẩu" />
             </div>
-            <div class="list-item">
-              <a href="">
-                <img src="img/balo.jpg" alt="" />
-                <div class="price">550.000<sup>đ</sup></div>
-                <div class="name-product">Balo</div>
-              </a>
+            <div class="btn-signup">
+              <button type="submit">Đăng kí</button>
             </div>
-            <div class="list-item">
-              <a href="">
-                <img src="img/giaydabong1.jpg" alt="" />
-                <div class="price">2.550.000<sup>đ</sup></div>
-                <div class="name-product">Giày thể thao</div>
-              </a>
+            <div class="member">
+              <pre>Đã có tài khoản !</pre>
+              <p class="next-login">Đăng nhập</p>
             </div>
           </div>
-          <div class="btn-hot-product">
-            <a href=""><button>Xem tất cả</button></a>
+          <div class="reset-password hide-login">
+            <div class="title-login">Lấy lại mật khẩu</div>
+            <div class="inputEmail">
+              <input type="text" placeholder="Địa chỉ Email" />
+            </div>
+            <div class="btn-reset-password">
+              <button type="submit">Gửi mã xác minh</button>
+            </div>
+            <div class="member">
+              <pre>Quay trở lại trang</pre>
+              <p class="next-login">Đăng nhập</p>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    <!-------------------------- footer -------------------->
     <footer class="footer">
       <div class="container-footer">
         <div class="row">
@@ -636,17 +618,12 @@
       </div>
     </footer>
     <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
