@@ -61,7 +61,6 @@ const iconfilter = document.querySelectorAll(".icon-down i");
 select.forEach((item, index) => {
   item.addEventListener("click", () => {
     iconfilter[index].classList.toggle("rotate180");
-    // subfilter[index].classList.toggle("sub-filter-open");
   });
 });
 const size = document.querySelectorAll(".size ul li");

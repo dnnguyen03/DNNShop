@@ -138,7 +138,7 @@ a {
 }
 .sub-menu {
   position: absolute;
-  width: 100vmax;
+  width: 100%;
   margin-top: 38px;
   left: 0;
   background-color: white;
