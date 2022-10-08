@@ -214,9 +214,10 @@ a {
 }
 .container-main {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .dnn-login {
-  margin: auto;
   margin-top: 35px;
   width: 380px;
 }
