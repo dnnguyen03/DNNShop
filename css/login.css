@@ -478,7 +478,8 @@ input:focus {
   .menu-mobile {
     display: block;
     position: fixed;
-    height: 100vh;
+    top: 0;
+    bottom: 0;
     width: 80%;
     background-color: white;
     z-index: 5;
@@ -514,7 +515,7 @@ input:focus {
   }
   .login-support {
     margin: auto !important;
-    margin-top: 400px !important;
+    margin-top: 250px !important;
     width: 90%;
     display: flex;
     flex-direction: column;
