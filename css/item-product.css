@@ -536,7 +536,8 @@ input[type="number"] {
   .menu-mobile {
     display: block;
     position: fixed;
-    height: 100vh;
+    top: 0;
+    bottom: 0;
     width: 80%;
     background-color: white;
     z-index: 5;
