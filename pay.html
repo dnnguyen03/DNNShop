@@ -5,22 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/index.css" />
-
-    <title>DNN Shop</title>
+    <link rel="stylesheet" href="css/pay.css" />
+    <title>DNN Pay</title>
   </head>
   <body>
-    <!-------------------------- header --------------------->
     <header class="header">
       <div class="main-menu">
         <li>
@@ -40,6 +32,7 @@
                 <a href="list-product.html">Tất cả áo</a>
                 <a href="list-product.html">Áo polo</a>
                 <a href="list-product.html">Áo sơ mi</a>
+                <a href="list-product.html">Áo ba lổ</a>
                 <a href="list-product.html">Áo hoodie</a>
                 <a href="list-product.html">Áo bóng đá</a>
               </div>
@@ -142,7 +135,7 @@
         </li>
       </div>
       <div class="logo">
-        <img src="img/logo1.png" alt="" />
+        <a href="index.html"><img src="img/logo1.png" alt="" /></a>
       </div>
       <div class="right-header">
         <div class="search-form">
@@ -189,9 +182,6 @@
           ></label>
         </div>
       </div>
-    </header>
-    <!-------------------------- main ------------------>
-    <main>
       <input type="checkbox" class="check-menu" id="menu-mobile-input" hidden />
       <label for="menu-mobile-input" class="menu-overlay"> </label>
       <div class="menu-mobile">
@@ -493,110 +483,112 @@
           </div>
         </div>
       </div>
-      <div class="fix-header"></div>
+    </header>
+    <main>
       <div class="container">
-        <div class="intro-video">
-          <div class="title-video activeshow">
-            <h1 class="showtotop">DNN</h1>
-            <p class="showtotop delay-02">
-              Hãy để chúng tôi bảo vệ đôi chân bạn
-            </p>
-            <a class="btn-video showtotop delay-02" href="list-product.html">
-              <div class="arrow"><i class="fa-solid fa-arrow-left"></i></div>
-              <span>MUA NGAY</span><i></i>
-            </a>
-          </div>
-          <video src="video/indexvideo.mp4" autoplay muted loop></video>
-        </div>
-        <div class="new-product">
-          <div class="title-new-product">
-            <h2>SẢN PHẨM MỚI</h2>
-            <p>
-              Bộ sưu tập mới đầy sang trọng và lịch lãm phù hợp với các quý ông
-            </p>
-            <div class="btn-new-product">
-              <a href="index.html"><button>Xem ngay</button></a>
+        <div class="cart">
+          <div class="product-cart">
+            <div class="cart-title">Giỏ hàng của bạn có 2 sản phẩm</div>
+            <div class="list-product">
+              <div class="item-product">
+                <div class="imgPro">
+                  <img src="img/aoMU1.jpg" alt="" />
+                </div>
+                <div class="inforPro">
+                  <div class="namePro">
+                    <p>Áo đấu ManChester United</p>
+                  </div>
+                  <div class="colorPro">
+                    <p>Màu sắc:</p>
+                    <span class="color">
+                      <img src="img/red.png" alt="" />
+                    </span>
+                  </div>
+                  <div class="sizePro">
+                    <p>Size:</p>
+                    <p>M</p>
+                  </div>
+                  <div class="pricePro">
+                    <p>2.000.000đ</p>
+                  </div>
+                </div>
+                <div class="quantityProd">
+                  <div class="input-quantity">
+                    <button id="decrement">-</button>
+                    <input
+                      type="number"
+                      class="my-input"
+                      min="1"
+                      max="100"
+                      step="1"
+                      value="1"
+                      readonly
+                    />
+                    <button id="increment">+</button>
+                  </div>
+                </div>
+                <div class="deletePro">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </div>
+              <div class="item-product">
+                <div class="imgPro">
+                  <img src="img/jordan1-ko.jpg" alt="" />
+                </div>
+                <div class="inforPro">
+                  <div class="namePro">
+                    <p>Jordan1-ko</p>
+                  </div>
+                  <div class="colorPro">
+                    <p>Màu sắc:</p>
+                    <span class="color">
+                      <img src="img/white.jfif" alt="" />
+                    </span>
+                  </div>
+                  <div class="sizePro">
+                    <p>Size:</p>
+                    <p>L</p>
+                  </div>
+                  <div class="pricePro">
+                    <p>1.400.000đ</p>
+                  </div>
+                </div>
+                <div class="quantityProd">
+                  <div class="input-quantity">
+                    <button id="decrement">-</button>
+                    <input
+                      type="number"
+                      class="my-input"
+                      min="1"
+                      max="100"
+                      step="1"
+                      value="1"
+                      readonly
+                    />
+                    <button id="increment">+</button>
+                  </div>
+                </div>
+                <div class="deletePro">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="slide-product">
-            <div class="arrow-left">
-              <i class="fa-solid fa-arrow-left"></i>
+          <div class="cart-summary">
+            <h3>Tổng tiền giỏ hàng</h3>
+            <div class="cart-summary__overview__item">
+              <p>Tổng sản phẩm</p>
+              <div class="total-product">2</div>
             </div>
-            <div class="arrow-right">
-              <i class="fa-solid fa-arrow-right"></i>
+            <div class="cart-summary__overview__item">
+              <p>Thành tiền</p>
+              <b class="order-price-total">3.400.000đ</b>
             </div>
-            <div class="slide">
-              <img src="img/anh1.jpg" alt="" />
-              <img src="img/anh2.jpg" alt="" />
-              <img src="img/anh3.jpg" alt="" />
-              <img src="img/anh4.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="hot-product">
-          <div class="title-hot-product">
-            <h2>SẢN PHẨM BÁN CHẠY NHẤT</h2>
-          </div>
-          <div class="action-hot-product">
-            <a href="list-product.html">Xem tất cả</a>
-            <div class="leftproduct">
-              <i class="fa-solid fa-chevron-left"></i>
-            </div>
-            <div class="rightproduct">
-              <i class="fa-solid fa-chevron-right"></i>
-            </div>
-          </div>
-          <div class="list-product">
-            <div class="list-item">
-              <a href="item-product.html">
-                <img src="img/aoMU1.jpg" alt="" />
-                <div class="price">2.000.000<sup>đ</sup></div>
-                <div class="name-product">Áo đấu Manchester United</div>
-              </a>
-            </div>
-            <div class="list-item">
-              <a href="item-product.html">
-                <img src="img/jordan1-ko.jpg" alt="" />
-                <div class="price">1.400.000<sup>đ</sup></div>
-                <div class="name-product">Jordan KO</div>
-              </a>
-            </div>
-            <div class="list-item">
-              <a href="item-product.html">
-                <img src="img/tatnike.jpg" alt="" />
-                <div class="price">50.000<sup>đ</sup></div>
-                <div class="name-product">Tất Nike</div>
-              </a>
-            </div>
-            <div class="list-item">
-              <a href="item-product.html">
-                <img src="img/aopolo.jpg" alt="" />
-                <div class="price">350.000<sup>đ</sup></div>
-                <div class="name-product">Áo polo</div>
-              </a>
-            </div>
-            <div class="list-item">
-              <a href="item-product.html">
-                <img src="img/balo.jpg" alt="" />
-                <div class="price">550.000<sup>đ</sup></div>
-                <div class="name-product">Balo</div>
-              </a>
-            </div>
-            <div class="list-item">
-              <a href="item-product.html">
-                <img src="img/giaydabong1.jpg" alt="" />
-                <div class="price">2.550.000<sup>đ</sup></div>
-                <div class="name-product">Giày thể thao</div>
-              </a>
-            </div>
-          </div>
-          <div class="btn-hot-product">
-            <a href="list-product.html"><button>Xem tất cả</button></a>
+            <button type="submit">Thanh Toán</button>
           </div>
         </div>
       </div>
     </main>
-    <!-------------------------- footer -------------------->
     <footer class="footer">
       <div class="container-footer">
         <div class="row">
@@ -648,14 +640,6 @@
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.11.0.min.js"
     ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="js/index.js"></script>
+    <script src="js/pay.js"></script>
   </body>
 </html>

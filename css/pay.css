@@ -203,70 +203,63 @@ a {
     opacity: 1;
   }
 }
-/* -----------------------------------main------------------------------------ */
+/* -------------------------------------main ---------------------------------*/
 .container {
-  margin-top: 20px;
   width: 100%;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-.page-product {
-  position: relative;
-  display: flex;
+.cart {
   width: 1220px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
 }
-.img-product {
-  width: 50%;
-  padding: 15px;
-  position: relative;
+.cart-title {
+  font-size: 26px;
+  font-weight: 600;
 }
-.imgProd {
+.product-cart {
+  width: 65%;
+}
+.cart-summary {
+  width: 35%;
+  max-height: 320px;
+  padding: 5px 20px;
+  margin-left: 20px;
+  background-color: #f7f8f9;
+}
+.item-product {
+  margin: 20px 0;
+  display: flex;
+  border-top: 1px solid #9999;
+  border-bottom: 1px solid #9999;
+}
+.imgPro {
+  width: 240px;
+  height: 240px;
+}
+.imgPro img {
   width: 100%;
+  object-fit: cover;
 }
-.imgsilde {
-  margin-top: 10px;
-  width: 100%;
+.inforPro {
+  width: 330px;
+  font-size: 22px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
 }
-.imgProd img {
-  width: 100%;
-}
-.imgsilde img {
-  margin: 1px 10px;
-}
-.imgsilde .slick-current {
-  outline-style: solid;
-  outline-color: black;
-  outline-width: 0.5px;
-}
-.infor-product {
-  width: 50%;
-  padding: 20px;
-}
-.infor-product > div {
-  margin: 25px 0;
-}
-.nameProd {
-  font-weight: 700;
-  font-size: 30px;
+.namePro {
   text-transform: uppercase;
+  font-weight: 600;
 }
-.priceProd {
-  font-size: 30px;
-  letter-spacing: 1px;
-  font-weight: 500;
-}
-.colorProd {
-  font-size: 20px;
+.colorPro {
   display: flex;
   align-items: center;
 }
-.tableColor {
-  display: flex;
-  margin-left: 10px;
-}
-.tableColor span {
+span {
   height: 16px;
   width: 16px;
   margin: 10px;
@@ -277,37 +270,21 @@ a {
   cursor: pointer;
   overflow: hidden;
 }
-.active-color {
-  outline-width: 3px !important;
-}
-.sizeProd {
-  display: flex;
-  font-size: 20px;
-  align-items: center;
-}
-.tableSize {
-  margin-left: 10px;
+.sizePro {
   display: flex;
 }
-.tableSize > div {
-  padding: 8px 16px;
-  margin: 0 15px;
-  background-color: white;
-  text-align: center;
-  border-radius: 6px;
-  cursor: pointer;
-  border: 1px solid #9999;
-  font-size: 16px;
+.sizePro p {
+  margin-right: 10px;
 }
-.active-size {
-  outline-style: solid;
-  outline-color: black;
-  outline-width: 1.5px;
+.pricePro {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .quantityProd {
   display: flex;
-  font-size: 20px;
   align-items: center;
+  margin-right: 30px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -323,7 +300,6 @@ input[type="number"] {
 }
 .input-quantity {
   display: flex;
-  margin-left: 20px;
   outline-style: solid;
   outline-color: #999;
   outline-width: 0.5px;
@@ -334,51 +310,39 @@ input[type="number"] {
   cursor: pointer;
   font-size: 25px;
   background-color: white;
-  padding: 2px 5px;
+  padding: 1px 3px;
 }
-.actionsPro {
-  margin: 45px 0 !important;
+.deletePro {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
 }
-.actionsPro button {
-  font-size: 18px;
+.cart-summary h3 {
+  font-size: 26px;
   font-weight: 600;
-  background-color: white;
-  border: 1px solid black;
-  padding: 12px 22px;
-  margin-right: 20px;
-  border-top-left-radius: 18px;
-  border-bottom-right-radius: 18px;
-  transition: 0.25s;
-  text-transform: uppercase;
-  cursor: pointer;
 }
-.actionsPro button:hover {
+.cart-summary__overview__item {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  font-size: 20px;
+}
+.cart-summary button {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 60px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   background-color: black;
   color: white;
+  border: 1px solid black;
 }
-.detailProd p {
-  font-size: 20px;
-}
-.detailProd-tab-header {
-  display: flex;
-  height: 40px;
-  border-bottom: 1px solid #e5e5e5;
-}
-.detailProd-tab-header .tab-item {
-  font-size: 20px;
-  margin-right: 20px;
-  height: 100%;
-  cursor: pointer;
-}
-.detailProd-tab-body {
-  margin-top: 10px;
-  font-size: 18px;
-}
-.active-detailProd {
-  border-bottom: 2px solid black;
-}
-.hideContent {
-  display: none;
+.cart-summary button:hover {
+  background-color: white;
+  color: black;
 }
 /* -------------------------------------footer ---------------------------------*/
 .footer {
@@ -674,35 +638,38 @@ input[type="number"] {
 /* ------- Mobile -------- */
 @media only screen and (max-width: 739px) {
   /* -----------main----------- */
-  .page-product {
+  .cart {
+    width: 100%;
     display: block;
-    box-shadow: none;
-    width: 100%;
   }
-  .img-product {
-    width: 100%;
-    margin: auto;
+  .cart-title {
+    font-size: 22px;
+  }
+  .item-product {
     padding: 10px;
   }
-  .infor-product {
-    margin: auto;
-    padding: 10px;
+  .product-cart {
     width: 100%;
   }
-  .actionsPro {
-    margin: 25px 0 !important;
+  .imgPro {
+    height: 175px;
   }
-  .actionsPro button {
+  .inforPro {
+    font-size: 18px;
+    margin: 0;
+  }
+  .pricePro {
+    font-size: 20px;
+  }
+  input[type="number"] {
     font-size: 15px;
-    margin-top: 10px;
   }
-  .tableSize {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .tableSize > div {
-    margin: 8px;
+  .quantityProd {
     margin-right: 15px;
+  }
+  .cart-summary {
+    width: 100%;
+    margin-left: 0;
   }
   /* -----------footer----------- */
   .footer {
@@ -715,19 +682,5 @@ input[type="number"] {
   }
   .dkthongbao {
     width: 200%;
-  }
-}
-/*----------------------------- Tablet --------------------------- */
-@media only screen and (min-width: 740px) and (max-width: 1233px) {
-  /* --------------------header--------------------- */
-  .page-product {
-    width: 85%;
-    display: block;
-  }
-  .img-product {
-    width: 100%;
-  }
-  .infor-product {
-    width: 100%;
   }
 }
