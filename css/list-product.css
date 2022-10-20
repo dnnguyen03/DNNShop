@@ -914,6 +914,12 @@ input[type="range"]::-moz-range-thumb {
     border-bottom: 1px solid #999;
     transition: 0.3s;
     z-index: 7;
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  .btn-filter {
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
   .btn-filter button,
   .icon-down i {
